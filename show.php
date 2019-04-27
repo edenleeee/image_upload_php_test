@@ -6,7 +6,7 @@ if(filter_has_var(INPUT_GET, "image_id") !== false && filter_input(INPUT_GET, 'i
     $image_id = filter_input(INPUT_GET, "image_id", FILTER_SANITIZE_NUMBER_INT);
    try    {
           /*** connect to the database ***/
-          $dbh = new PDO("mysql:host=localhost:3307;dbname=test", 'eden', 'Eden1234^^');
+          $dbh = new PDO("mysql:host=127.0.0.1;dbname=test", 'eden', 'Eden1234^^');
 
           /*** set the PDO error mode to exception ***/
           $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

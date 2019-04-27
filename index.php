@@ -141,7 +141,7 @@ if (!$copied1)
 
   try{
             /*** connect to db ***/
-        $dbh = new PDO("mysql:host=localhost;dbname=test", 'eden', 'Eden1234^^');
+        $dbh = new PDO("mysql:host=127.0.0.1;dbname=test", 'eden', 'Eden1234^^');
 
                 /*** set the error mode ***/
                 $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -173,7 +173,7 @@ if (!$copied1)
 
   try{
             /*** connect to db ***/
-            $dbh = new PDO("mysql:host=localhost;dbname=test", 'eden', 'Eden1234^^');
+            $dbh = new PDO("mysql:host=127.0.0.1;dbname=test", 'eden', 'Eden1234^^');
 
                 /*** set the error mode ***/
                 $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
